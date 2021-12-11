@@ -122,7 +122,7 @@ class Client(TargetInterface):
         return self._adapter.marketPrice()
 
 
-date = GetData("BTC", "usdt")
+date = GetData(input(), input())
 adp = Adaptee(date)
 adapter = Adapter(adp)
 client = Client(adapter)
